@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
-import { fetchSuccess, fetchStart, fetchFail, getActivity} from './../actions'
+import { getActivity} from './../actions'
 import axios from 'axios';
 
 const Activity = ({ data, isFetching, error, dispatch }) => {
   
-  useEffect(()=> {
+  useEffect( () => {
     dispatch(getActivity())
   }, [])
   
@@ -24,7 +24,7 @@ const handleClick = () => {
     <>
       <div className='activity'> 
          <h2>{data.activity}</h2>
-         <p>Type: {data.type}</p>
+         <p>Category: {data.type}</p>
          </div>
          <div className='button'>
         <button onClick={handleClick}>CLICK ME</button>
