@@ -8,7 +8,7 @@ const Activity = ({ data, isFetching, error, dispatch }) => {
   useEffect(()=> {
     dispatch(getActivity())
   }, [])
-  console.log(data)
+  
   if (error) {
     return <h2> Error:{error}</h2>;
   }

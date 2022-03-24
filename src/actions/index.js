@@ -9,7 +9,7 @@ export const getActivity = ()=> {
         axios.get('https://www.boredapi.com/api/activity')
        
         .then(res=> {
-          console.log('1',res)  
+          
             dispatch(fetchSuccess(res.data))
         })
         .catch(err=> {
