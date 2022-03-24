@@ -1,4 +1,4 @@
-import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS} from './../actions'
+import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS} from '../actions'
 const initialState = {
     data:[
       {

@@ -10,11 +10,11 @@ const Activity = ({ data, isFetching, error, dispatch }) => {
   }, [])
   console.log(data)
   if (error) {
-    return <h2>We got an error:{error}</h2>;
+    return <h2> Error:{error}</h2>;
   }
 
   if (isFetching) {
-    return <h2>Fetching the activity for ya!</h2>;
+    return <h2>Fetching the activity</h2>;
   }
 const handleClick = () => {
     dispatch(getActivity());
@@ -27,7 +27,7 @@ const handleClick = () => {
          <p>Type: {data.type}</p>
          </div>
          <div className='button'>
-        <button onClick={handleClick}>Click for more</button>
+        <button onClick={handleClick}>CLICK ME</button>
      </div>
     </>
   );
